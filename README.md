@@ -8,8 +8,7 @@
 - **Curso:** Licenciatura em Engenharia Informática
 - **GitHub:** https://github.com/hhtomaswt11
 
-<!-- ![Tomás Melo](foto.png)  --> 
-
+![Tomás Melo](IMG_5320.jpg)  
 ---
 
 ## 📂 Descrição 

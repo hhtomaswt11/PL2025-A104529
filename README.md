@@ -13,5 +13,5 @@
 
 ## 📂 Descrição 
 
-Conjunto de trabalhos realizados para a UC Processamento de Linguagens durante o 3ºano2ºsem da Licenciatura em Engenharia Informática pela Universidade do Minho
+Conjunto de trabalhos realizados para a UC Processamento de Linguagens durante o 2º semestre do 3º ano no curso de Engenharia Informática pela Universidade do Minho.
 

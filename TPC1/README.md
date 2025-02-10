@@ -24,13 +24,11 @@ Todo o código (das duas versões) encontra-se adequadamente documentado para f�
 
 
 ## Ficheiros & Resultados
-Ficheiros elaborados:
 
-- [somadoronoff.py](./somadoronoff.py)
-Output:
-<img src="../assets/TPC1_output_v1.png" alt="A104529 - Tomás Melo" width="180">
+#### [somadoronoff.py](./somadoronoff.py)
+### Output:
+<img src="../assets/TPC1_output_v1.png" alt="Output v1" width="400">
 
-- [somadoronoffNOREGEX.py](./somadoronoffNOREGEX.py)
-Output:
-<img src="../assets/TPC1_output_v2.png" alt="A104529 - Tomás Melo" width="180">
-
+#### [somadoronoffNOREGEX.py](./somadoronoffNOREGEX.py)
+### Output:
+<img src="../assets/TPC1_output_v2.png" alt="Output v2" width="400">

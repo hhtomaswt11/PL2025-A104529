@@ -9,7 +9,7 @@ O manifesto deverá ter a seguinte estrutura: título, data, autor (nome, númer
 - **Data:** 10 de fevereiro de 2025
 - **Autor:** Tomás Henrique Alves Melo - A104529 
 
-![A104529 - Tomás Melo](../assets/perfil.jpg)
+<img src="../assets/perfil.jpg" alt="A104529 - Tomás Melo" width="150">
 
 
 ## Resumo

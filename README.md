@@ -5,7 +5,7 @@
 - **Autor:** Tomás Henrique Alves Melo - A104529
 - **GitHub:** https://github.com/hhtomaswt11
 
-![A104529 - Tomás Melo](assets/perfil.jpg)
+<img src="assets/perfil.jpg" alt="A104529 - Tomás Melo" width="150">
 
 - Universidade do Minho - Licenciatura em Engenharia Informática
 

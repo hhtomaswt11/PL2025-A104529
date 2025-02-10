@@ -2,7 +2,7 @@
 
 ## 📌 Identificação
 
-- **Nome:** Tomás Henrique Alves Melo
+- **Autor:** Tomás Henrique Alves Melo - A104529
 - **GitHub:** https://github.com/hhtomaswt11
 
 ![A104529 - Tomás Melo](assets/perfil.jpg)

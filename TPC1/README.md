@@ -23,10 +23,14 @@ Na segunda versão decidi antecipar o estudo de regex e comecei a ver métodos p
 Todo o código (das duas versões) encontra-se adequadamente documentado para fácil entendimento daquilo que foi feito neste trabalho prático. 
 
 
-## Resultados
+## Ficheiros & Resultados
 Ficheiros elaborados:
 
 - [somadoronoff.py](./somadoronoff.py)
-- [somadoronoffNOREGEX.py](./somadoronoffNOREGEX.py)
+Output:
+<img src="../assets/TPC1_output_v1.png" alt="A104529 - Tomás Melo" width="180">
 
+- [somadoronoffNOREGEX.py](./somadoronoffNOREGEX.py)
+Output:
+<img src="../assets/TPC1_output_v2.png" alt="A104529 - Tomás Melo" width="180">
 

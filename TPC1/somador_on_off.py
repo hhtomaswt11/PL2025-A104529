@@ -34,4 +34,4 @@ if __name__ == "__main__":
     # Test
     mensagem = "1iMRE6r=HtzkAon8o2sdXVtM0oLoffzNxZi3z2eqOpZNEqCJaLonK1mMTy4d89WoffaJ8uH6sgDxy2xMJoNRQZ7aAmkmhF5N923eTqqzequb4eYpA34DIojequZtnvw67LyrPxme0eqZbYZPon82fFbYKoffQXTonOnjjAAzS4=eq1tKe0VQuS89yuoffLoNCs8rV24P3Eeq1GeAtonjvTK0A5KmKAEaOon1=deqQcZrZ5MBu58HzkequWQ5XC9Fon83ctoffFHaEQFtN9aIonfjAq9eqW0L6F9W4=eq=2pOQRUgAM56DKoffZ6BYeq7sYononKZV=eq0K9KdW=VononAid6Uon6GeoffW=onD=OffonEQ=offG=39MoNyOn=EQOff7offOn5DSOffOn9OnW=43Uk=OffOnON"
     mensagemSimples = "1a2b3c4d=on5e6f7g=off8h9i=on10j11k"
-    somador_on_off(mensagem)
+    somador_on_off(mensagemSimples)

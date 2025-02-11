@@ -25,9 +25,7 @@ O manifesto deverá ter a seguinte estrutura: título, data, autor (nome, númer
 
 ###### O output deverá ser: 
 
--> 10  
--> 28  
--> 28
+-> 10<br> -> 28<br> -> 28
 
 ## Resumo
 
@@ -37,8 +35,8 @@ Todo o código encontra-se adequadamente documentado para fácil entendimento da
 
 Foram realizados vários testes com diversas strings de entrada, de modo a testar corretamente a fidelidade do código desenvolvido tendo em conta o output esperado para cada tipo de mensagem de entrada escolhida.
 
-## Ficheiro & Resultado 
+## Ficheiros & Resultados 
 
 #### [somador_on_off.py](./somador_on_off.py)
-### Output:
+#### Saída:
 <img src="../assets/TPC1_output_v1.png" alt="Output v2" width="400">

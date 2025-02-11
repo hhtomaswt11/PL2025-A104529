@@ -37,6 +37,7 @@ Foram realizados vários testes com diversas strings de entrada, de modo a testa
 
 ## Ficheiros & Resultados 
 
+#### Ficheiro desenvolvido 
 #### [somador_on_off.py](./somador_on_off.py)
 #### Saída:
 <img src="../assets/TPC1_output_v1.png" alt="Output v2" width="400">

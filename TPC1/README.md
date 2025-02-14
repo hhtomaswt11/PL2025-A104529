@@ -25,11 +25,11 @@ O manifesto deverá ter a seguinte estrutura: título, data, autor (nome, númer
 
 ###### O output deverá ser: 
 
--> 10<br> -> 28<br> -> 28
+10<br>  28<br>  28<br> 49
 
 ## Resumo
 
-No código desenvolvido para responder ao exercício indicado, após rever conceitos de linguagem Python, apliquei-os, de modo a conseguir desenvolver uma versão simples e funcional que consiste na iteração de toda a mensagem caracter a caracter, com recurso a uma variável de controlo de estado do somador, váriavel 'ligado', que indica se o somador está ligado ou não (inicialmente esta variável encontra-se como 'True'), acumulação dos números numa variável temporária (filtragem dos números feita pelo método isdigit()) que irá permitir a soma dos números obtidos até ao momento e posterior reset, de modo a poder acumular novos números sempre que a soma dos já acumulados é feita, procura pelas strings 'on' e 'off' para verificar as mudanças de estado do somador (uma vez que estas strings podem aparecer na mensagem de entrada em qualquer combinação de maiúsculas e minúsculas, a comparação é feita no estado em que todos os caracteres se encontram em minúsculo ao recorrer ao método .lower()) e procura pelo caracetere '=' para, assim, retornar a soma acumulada na variável 'soma' até ao momento. 
+No código desenvolvido para responder ao exercício indicado, após rever conceitos de linguagem Python, apliquei-os, de modo a conseguir desenvolver uma versão simples e funcional que consiste na iteração de toda a mensagem caracter a caracter, com recurso a uma variável de controlo de estado do somador, váriavel 'ligado', que indica se o somador está ligado ou não (inicialmente esta variável encontra-se como 'True'), acumulação dos números numa variável temporária (filtragem dos números feita pelo método isdigit()) que irá permitir a soma dos números obtidos até ao momento e posterior reset, de modo a poder acumular novos números sempre que a soma dos já acumulados é feita, procura pelas strings 'on' e 'off' para verificar as mudanças de estado do somador (uma vez que estas strings podem aparecer na mensagem de entrada em qualquer combinação de maiúsculas e minúsculas, a comparação é feita no estado em que todos os caracteres se encontram em minúsculo ao recorrer ao método .lower()) e procura pelo caracetere '=' para, assim, retornar a soma acumulada na variável 'soma' até ao momento. A soma final é calculada introduzindo um caractere '=' no final da mensagem de entrada, no início da função somador_on_off desenvolvida.
 
 Todo o código encontra-se adequadamente documentado para fácil entendimento daquilo que foi feito neste trabalho prático. 
 
@@ -37,7 +37,7 @@ Foram realizados vários testes com diversas strings de entrada, de modo a testa
 
 ## Ficheiros & Resultados 
 
-#### Ficheiro desenvolvido 
+#### Ficheiro desenvolvido
 #### [somador_on_off.py](./somador_on_off.py)
 #### Saída:
 <img src="../assets/TPC1_output_v1.png" alt="Output v2" width="400">

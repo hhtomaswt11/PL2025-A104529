@@ -33,16 +33,18 @@ Por fim, para o exercício 3, a lista resultante foi percorrida e, para cada ent
 
 ## Ficheiros & Resultados 
 
-#### Ficheiros desenvolvidos
+#### Ficheiro de parsing
 
 #### [parse_csv.py](./parse_csv.py)
+
+#### Ficheiros dos exercícios propostos
 
 #### [ex1_ordenacao_compositores.py](./ex1_ordenacao_compositores.py)
 #### Saída:
 <img src="../assets/TPC2_output_ex1.png" alt="Output v1" width="400">
 
 
-#### [ex2_obras_periodo.py](./ex2_obras_periodo.py)
+#### [ex2_obras_por_periodo.py](./ex2_obras_por_periodo.py)
 #### Saída:
 <img src="../assets/TPC2_output_ex2.png" alt="Output v2" width="400">
 

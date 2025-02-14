@@ -31,6 +31,9 @@ Para o exercício 2, a lista resultante foi percorrida e, para cada entrada arma
 
 Por fim, para o exercício 3, a lista resultante foi percorrida e, para cada entrada armazenamos os valores de 'período' e 'título'. Previamente, assim como no último exercício, criámos um dicionário, porém este terá como valor uma lista. O dicionário encontra-se mapeado de período para lista (de títulos). Se o período não existir criámos uma nova lista associada associada àquele período. Caso contrário, adicionámos o título à lista associada àquele período. Por fim, teremos um dicionário a indicar, para cada período, a lista de títulos das obras desse período.
 
+Todo o código encontra-se adequadamente documentado para fácil entendimento daquilo que foi feito neste trabalho prático. 
+
+Foram realizados vários testes, com uma análise cuidada do output de cada função desenvolvida com comparação ao ficheiro obras.csv, de modo a garantir a fidelidade do código desenvolvido tendo em conta o output esperado para cada uma das três funções que foram desenvolvidas.
 ## Ficheiros & Resultados 
 
 #### Ficheiro de parsing

@@ -3,10 +3,9 @@
 def somador_on_off(texto):
     soma = 0
     ligado = True  # Começamos com a soma logo ligada
-    num_temp = ""  # Armazena os números ao longo da iteração 
+    num_temp = ""  # Armazenamos os números ao longo da iteração 
     if not texto.endswith('='):
         texto += '='
-
 
     for i in range(len(texto)): 
         char = texto[i]

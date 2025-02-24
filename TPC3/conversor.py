@@ -38,13 +38,14 @@ def criar_lista(match):
     
 def conversor(data):
     output = []
+    
     linhas = data.splitlines()
     
     padrao_hash = r"^(#{1,6})\s+(.+)" 
       
-    bold_pattern = r"\*\*(.+?)\*\*" 
+    padrao_bold = r"\*\*(.+?)\*\*" 
     
-    italic_pattern = r"\*(.+?)\*"
+    padrao_italico = r"\*(.+?)\*"
     
     padrao_link = r"([A-Za-z0-9\:\,\;\%\&\$\/ ]+)\s*\[([\w ]+)\]\s*\((https?\:\/\/[A-Za-z]+\.[A-Za-z]+\.[A-Za-z]{2,})\)"
     
@@ -55,9 +56,6 @@ def conversor(data):
     # [^\]]+ corresponde a qualquer coisa exceto ]
     # [^\.]+ corresponde a qualquer coisa exceto . 
     
-    # padrao_lista = r"\s*(\d+)\.\s*(.*)"
-    
-    
     i = 0 
     while i < len(linhas):
         linha = linhas[i].strip()
@@ -67,13 +65,13 @@ def conversor(data):
             output.append(linha_convertida )
             i = i+1 
         
-        elif re.search(bold_pattern, linha):
-            linha_convertida = re.sub(bold_pattern, substituir_negrito, linha)
+        elif re.search(padrao_bold, linha):
+            linha_convertida = re.sub(padrao_bold, substituir_negrito, linha)
             output.append(linha_convertida )
             i = i+1
             
-        elif re.search(italic_pattern, linha):
-            linha_convertida = re.sub(italic_pattern, substituir_italico, linha)
+        elif re.search(padrao_italico, linha):
+            linha_convertida = re.sub(padrao_italico, substituir_italico, linha)
             output.append(linha_convertida )
             i = i+1
             
@@ -100,7 +98,17 @@ def conversor(data):
           
     return "\n".join(output)
 
-                
+def abrir_ler_ficheiro(filename):
+    with open (filename, 'r') as f:
+        content = f.read()
+    return content 
+
+
+def abrir_escrever_ficheiro(filename, msg):
+    with open (filename, 'w') as f:    
+        f.write(msg)
+
+           
 # "       
 # 1. Primeiro item   
 # 2. Segundo item          
@@ -124,7 +132,7 @@ Este é um *exemplo*
 """
 
 markdown_texto3 = """
-Como se vê na imagem: ![imagem dum coelho](http://www.coellho.com) Ola Mundo 
+Como se vê na imagem: ![imagem dum coelho](http://www.coellho.com) Continuação 
 Como se vê na imagem seguinte: ![imagem dum coelho](http://www.coellho.com) ...
 """
 
@@ -152,15 +160,6 @@ O link pode ser consultado em [Processamento de Linguagens] (https://www.pl.pt)
 Consulte na seguinte imagem: ![Processamento de Linguagens] (https://www.pl.pt)
 """
 
-def abrir_ler_ficheiro(filename):
-    with open (filename, 'r') as f:
-        content = f.read()
-    return content 
-
-
-def abrir_escrever_ficheiro(filename, msg):
-    with open (filename, 'w') as f:    
-        f.write(msg)
 
 if __name__ == "__main__":
     filename_input = "EXEMPLO.md"

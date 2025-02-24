@@ -116,7 +116,7 @@ Foquei-me também no aspeto da manutenção do códigom tornando-o flexível e "
 #### Saída:
 <img src="../assets/TPC3_output_v3.png" alt="Output v3" width="400">
 
-#### Saída no navegador 
+#### Saída no navegador: 
 <img src="../assets/TPC3_output_v2.png" alt="Output v4" width="400">
 
 

@@ -152,9 +152,22 @@ O link pode ser consultado em [Processamento de Linguagens] (https://www.pl.pt)
 Consulte na seguinte imagem: ![Processamento de Linguagens] (https://www.pl.pt)
 """
 
+def abrir_ler_ficheiro(filename):
+    with open (filename, 'r') as f:
+        content = f.read()
+    return content 
 
+
+def abrir_escrever_ficheiro(filename, msg):
+    with open (filename, 'w') as f:    
+        f.write(msg)
 
 if __name__ == "__main__":
+    filename_input = "EXEMPLO.md"
+    filename_output = "EXEMPLO.html"
+    content = abrir_ler_ficheiro(filename_input)
+    html_format = conversor(content)
+    abrir_escrever_ficheiro(filename_output, html_format)
     print(conversor(markdown_texto6))
 
 

@@ -102,10 +102,21 @@ Foquei-me também no aspeto da manutenção do códigom tornando-o flexível e "
 
 ## Ficheiros & Resultados 
 
-#### Ficheiro desenvolvido
+#### Ficheiros desenvolvidos
+
 #### [conversor.py](./conversor.py)
 #### Saída:
 <img src="../assets/TPC3_output_v1.png" alt="Output v1" width="400">
 
+#### [EXEMPLO.md](./EXEMPLO.md)
+#### Saída:
+<img src="../assets/TPC3_output_v4.png" alt="Output v2" width="400">
+
+#### [EXEMPLO.html](./EXEMPLO.html)
+#### Saída:
+<img src="../assets/TPC3_output_v3.png" alt="Output v3" width="400">
+
+#### Saída no navegador 
+<img src="../assets/TPC3_output_v2.png" alt="Output v4" width="400">
 
 

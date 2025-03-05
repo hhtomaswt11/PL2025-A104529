@@ -7,17 +7,17 @@ tokens = [
     'BLOCK_START',
     'BLOCK_END',
     'SEPARATOR',
-    'COMMENTARY',
     'IDENTIFIER',
     'INTEGER',
     'TEXT_VALUE',
-    'RELATION'
+    'RELATION',
+    'COMMENTARY'
 ]
 
 t_ignore = ' \t'
 
 def t_error(t):
-    print(f'Char não reconhecido"')
+    print(f'<- CHAR NÃO RECONHECIDO ->')
     t.lexer.input(t.value[1:])
 
 def t_BLOCK_START(t):
@@ -53,8 +53,8 @@ def t_CMD_LIMIT(t):
     return t
 
 def t_newline(t):
-    r'\n+'
-    t.lexer.lineno += len(t.value)
+    r'(\r\n|\r|\n)+'  
+    t.lexer.lineno += t.value.count('\n')  
 
 def t_INTEGER(t):
     r'\d+'
@@ -74,13 +74,11 @@ def t_RELATION(t):
 def analisador_lexico(input_code):
     lexer = ply.lex.lex() 
     lexer.input(input_code)
-
     for tk in lexer:
         print(f'Tipo: {tk.type}, Valor: {tk.value}, Linha: {tk.lineno}')
 
 
 if __name__ == "__main__":
-    
     test_query = '''
     # DBPedia: Informações sobre Chuck Berry
     SELECT ?nome ?descricao WHERE {

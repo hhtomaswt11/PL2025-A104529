@@ -50,4 +50,4 @@ O código final é modular, eficiente, podendo ser facilmente adaptado para supo
 
 #### [analisador_lexico.py](./analisador_lexico.py)
 #### Saída:
-<img src="../assets/TPC4_output_v1.png" alt="Output v1" width="400">
+<img src="../assets/TPC4_output_v2.png" alt="Output v1" width="400">

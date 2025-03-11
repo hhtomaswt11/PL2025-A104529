@@ -1,6 +1,8 @@
-# Processamento de Linguagens - Máquina de Vending
+# Processamento de Linguagens (TPC5) - Máquina de Vending 
 - **Data:** 11 de março de 2025
-- **Autor:** Tomás Henrique Alves Melo - A104529
+- **Autor:** Tomás Henrique Alves Melo - A104529 
+
+<img src="../assets/perfil.jpg" alt="A104529 - Tomás Melo" width="150">
 
 
 ## Objetivo

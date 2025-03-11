@@ -46,7 +46,7 @@ O programa foi testado enúmeras vezes e com diferentes entradas para validar a 
 #### Ficheiros desenvolvidos
 #### [maq.py](./maq.py)
 #### Saída:
-<img src="../assets/TPC5_output_v1.png" alt="Output v2" width="400">
+<img src="../assets/TPC5_output_v1.png" alt="Output v1" width="400">
 
 #### [stock.json](./stock.json)
 #### Saída:

@@ -1,0 +1,29 @@
+pushi 0
+storeg 0
+start
+pushs "Introduza um número:"
+writes
+writeln
+read
+atoi
+storeg 0
+dup
+pushi 2
+mod
+pushi 0
+equal
+jz ELSE0
+pushg 0
+writei
+pushs " é par"
+writes
+writeln
+jump ENDIF1
+ELSE0:
+pushg 0
+writei
+pushs " é ímpar"
+writes
+writeln
+ENDIF1:
+stop

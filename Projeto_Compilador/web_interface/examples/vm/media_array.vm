@@ -1,0 +1,70 @@
+pushi 4
+allocn
+storeg 0
+pushst 0
+pushi 0
+store 0
+pushst 0
+pushi 0
+store 1
+pushst 0
+pushi 0
+store 2
+pushst 0
+pushi 0
+store 3
+pushi 0
+storeg 1
+pushi 0
+storeg 2
+pushi 0
+storeg 3
+pushi 0
+storeg 4
+start
+pushf 0.0
+storeg 2
+pushs "Introduza 4 notas:"
+writes
+writeln
+pushi 1
+storeg 1
+pushi 4
+storeg 4
+FOR1:
+pushg 1
+pushg 4
+sup
+not
+jz ENDFOR0
+pushst 0
+pushg 1
+pushi 1
+sub
+read
+atoi
+storen
+pushf 0.0
+pushst 0
+pushg 1
+pushi 1
+sub
+loadn
+add
+pushg 1
+pushi 1
+add
+storeg 1
+jump FOR1
+ENDFOR0:
+pushf 0.0
+pushi 4
+fdiv
+storeg 3
+pushs "Média: "
+writes
+pushg 3
+pushi 5
+pushi 2
+writeln
+stop

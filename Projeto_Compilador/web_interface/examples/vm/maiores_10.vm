@@ -1,0 +1,73 @@
+pushi 6
+allocn
+storeg 0
+pushst 0
+pushi 0
+store 0
+pushst 0
+pushi 0
+store 1
+pushst 0
+pushi 0
+store 2
+pushst 0
+pushi 0
+store 3
+pushst 0
+pushi 0
+store 4
+pushst 0
+pushi 0
+store 5
+pushi 0
+storeg 1
+pushi 0
+storeg 2
+pushi 0
+storeg 3
+start
+pushi 0
+pushs "Introduza 6 números:"
+writes
+writeln
+pushi 1
+storeg 1
+pushi 6
+storeg 3
+FOR1:
+pushg 1
+pushg 3
+sup
+not
+jz ENDFOR0
+pushst 0
+pushg 1
+pushi 1
+sub
+read
+atoi
+storen
+pushst 0
+pushg 1
+pushi 1
+sub
+loadn
+pushi 10
+sup
+jz ELSE2
+pushi 1
+jump ENDIF3
+ELSE2:
+ENDIF3:
+pushg 1
+pushi 1
+add
+storeg 1
+jump FOR1
+ENDFOR0:
+pushs "Quantidade > 10: "
+writes
+pushi 0
+writei
+writeln
+stop

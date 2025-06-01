@@ -1,0 +1,10 @@
+pushi 0
+storeg 0
+start
+pushi 4
+pushs "O resultado de (4 + 2 * 3 - 2) div 2 é: "
+writes
+pushi 4
+writei
+writeln
+stop

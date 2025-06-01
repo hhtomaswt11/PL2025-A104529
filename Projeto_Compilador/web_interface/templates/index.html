@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Compilador Pascal Standard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Compilador Pascal Standard - Grupo 11 @UMinho</h1>
+
+    <label for="fileSelect">Escolher ficheiro:</label>
+    <select id="fileSelect"></select>
+
+    <div class="buttons">
+        <button onclick="runAction('compile_only')">RUN</button>
+
+        <button onclick="runAction('tokens')">VER TOKENS</button>
+        <button onclick="runAction('ast')">VER AST</button>
+        <button onclick="runAction('semantic')">VER ANÁlISE SEMÂNTICA</button>
+        <button onclick="viewVM()">VER PROGRAMA VM</button>
+
+    </div>
+
+    <pre id="outputArea">OUTPUT</pre>
+
+   <script>
+    const files = {{ pas_files|tojson }};
+    const select = document.getElementById('fileSelect');
+    files.forEach(file => {
+        const option = document.createElement('option');
+        option.value = file;
+        option.text = file;
+        select.add(option);
+    });
+
+    function runAction(action) {
+        const filename = select.value;
+        fetch('/execute', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ filename, action })
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.text().then(text => {
+                    throw new Error("HTTP " + response.status + "\n" + text);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById('outputArea').textContent = data.output;
+        })
+        .catch(error => {
+            document.getElementById('outputArea').textContent = "⚠️ Erro ao processar resposta:\n\n" + error;
+        });
+    }
+
+    function viewVM() {
+        const filename = select.value;
+        fetch('/get_vm', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ filename })
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.text().then(text => {
+                    throw new Error("HTTP " + response.status + "\n" + text);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById('outputArea').textContent = data.output;
+        })
+        .catch(error => {
+            document.getElementById('outputArea').textContent = "⚠️ Erro ao processar VM:\n\n" + error;
+        });
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

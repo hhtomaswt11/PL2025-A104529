@@ -1,0 +1,47 @@
+pushi 0
+storeg 0
+pushi 0
+storeg 1
+pushi 0
+storeg 2
+pushi 0
+storeg 3
+start
+pushs "Introduza um número inteiro positivo:"
+writes
+writeln
+read
+atoi
+storeg 0
+pushi 1
+storeg 2
+pushi 1
+storeg 1
+pushg 0
+storeg 3
+FOR1:
+pushg 1
+pushg 3
+sup
+not
+jz ENDFOR0
+pushg 2
+pushg 1
+mul
+storeg 2
+pushg 1
+pushi 1
+add
+storeg 1
+jump FOR1
+ENDFOR0:
+pushs "Fatorial de "
+writes
+pushg 0
+writei
+pushs ": "
+writes
+pushg 2
+writei
+writeln
+stop

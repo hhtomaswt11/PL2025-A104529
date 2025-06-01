@@ -1,0 +1,17 @@
+pushi 0
+storeg 0
+start
+pushs "Insere um número real:"
+writes
+writeln
+read
+atof
+storeg 0
+pushs "Metade é: "
+writes
+pushg 0
+pushi 2
+fdiv
+writei
+writeln
+stop

@@ -1,0 +1,34 @@
+pushi 0
+storeg 0
+pushi 0
+storeg 1
+pushi 0
+storeg 2
+start
+pushs "Introduza um número inteiro positivo:"
+writes
+writeln
+read
+atoi
+storeg 0
+pushi 1
+pushi 1
+WHILE0:
+pushi 1
+pushg 0
+infeq
+jz ENDWHILE1
+pushi 1
+pushi 2
+jump WHILE0
+ENDWHILE1:
+pushs "Fatorial de "
+writes
+pushg 0
+writei
+pushs ": "
+writes
+pushi 1
+writei
+writeln
+stop

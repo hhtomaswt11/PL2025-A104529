@@ -1,0 +1,33 @@
+pushi 0
+storeg 0
+start
+pushs "Introduza um número:"
+writes
+writeln
+read
+atof
+storeg 0
+dup
+pushf 0.0
+sup
+jz ELSE0
+pushs "Número positivo"
+writes
+writeln
+jump ENDIF1
+ELSE0:
+pushg 0
+pushf 0.0
+inf
+jz ELSE2
+pushs "Número negativo"
+writes
+writeln
+jump ENDIF3
+ELSE2:
+pushs "Zero"
+writes
+writeln
+ENDIF3:
+ENDIF1:
+stop
